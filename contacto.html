@@ -44,6 +44,8 @@
             </p>
         </section>
 
+        <h1 class="titulo">CONTACTANOS</h1>
+
         <section class="section-contacto">
             <div class="container-reseña">
                 <h1>Barberia alura </h1>
@@ -68,7 +70,7 @@
                         <h3>Email:</h3>
                         <p>shaveclubbogota@gmail.com</p>
                     </li>
-                    
+
                     <li class="item-horario">
                         <span class="material-symbols-outlined">call</span>
                         <h3>Telefono:</h3>
@@ -81,6 +83,38 @@
                         <p>Calle 93B # 15-34 local 209, Bogotá Chicó.</p>
                     </li>
                 </ul>
+            </div>
+        </section>
+
+        <section class="section-formulario">
+            <div class="container-formulario">
+                <form class="formulario">
+                    <!-- <label for="nombre" ></label> -->
+                    <input class="input" required type="text" id="nombre" placeholder="Nombre y apellido">
+
+                    <!-- <label for="email" ></label> -->
+                    <input class="input" required type="text" id="email" placeholder="Email">
+
+                    <!-- <label for="telefono" >Telefono</label> -->
+                    <input  class="input"required type="tel" id="telefono" placeholder="Telefono">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="textarea" id="mensaje" cols="20" rows="10"></textarea>
+
+                    <fieldset>
+                        <legend>¿En que horario prefiere ser atendido?</legend>
+                        <select name="horario" id="horario">
+                            <option value="horario">Horario</option>
+                            <option value="mañana">Mañana</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noche">Noche</option>
+                        </select>
+                    </fieldset>
+
+                    <label><input class="checkbox" type="checkbox" checked> ¿Le gustaria recibir novedades de nuestra Barberia?</label>
+                    <input class="button" type="submit" value="Enviar Formulario">
+
+                </form>
             </div>
         </section>
     </main>

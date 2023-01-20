@@ -6,11 +6,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding-top: 145px;
 }
+
 /** container encabezado*/
 .section-encabezado {
+    border-radius: 0 0 24px 24px;
     background-image: url(imagenes/bg-contacto.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-color: rgb(60, 60, 60);
     background-blend-mode: soft-light;
     height: 40vh;
@@ -22,24 +25,37 @@ body {
     flex-direction: column;
     text-align: center;
 }
+/**-----------------------------------*/
 
+.titulo{
+    /* background-color: yellow; */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.section-contacto h1{
+    text-align: center;
+}
 .title-encabezado {
     font-size: 4rem;
     margin-bottom: 20px;
 }
-/**------------------------*/
 
-.section-contacto{
+
+.section-contacto {
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
 }
+
 /** The CSS for the `.container-reseña` class. */
-.container-reseña{
+.container-reseña {
     width: 70%;
 }
-.container-reseña h1{
+
+.container-reseña h1 {
     display: inline-block;
     padding: 0 0 10px;
     margin-left: 20px;
@@ -47,24 +63,122 @@ body {
     margin-bottom: 15px;
     border-bottom: 2px solid gold;
 }
-.container-reseña h3, p{
+
+.container-reseña h3,
+p {
     margin-left: 20px;
     padding: 5px 0;
     width: 80%;
 }
-.container-reseña p{
+
+.container-reseña p {
     margin-bottom: 20px;
 }
+
 /**---------------------------------------------*/
 
-.horario{
+/** Styling the `.horario` class. */
+.horario {
     margin: 0;
 }
-.item-horario{
+
+.item-horario {
     display: flex;
     list-style: none;
     margin: 0;
 }
-.item-horario span{
+
+.item-horario span {
     margin-right: 15px;
 }
+
+/**--------------------------------------------------*/
+.section-formulario {
+    /* background-color: aquamarine; */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 24px 24px 0 0;
+}
+
+.container-formulario {
+    /* background-color: aqua; */
+    margin: 0 auto;
+    width: 70%;
+}
+
+.input {
+    display: block;
+    width: 50%;
+    height: 2.5rem;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    border-radius: 14px;
+    border: none;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    /* background-color: cadetblue; */
+}
+
+.formulario label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 0 15px;
+}
+
+.textarea {
+    width: 50%;
+    padding: 15px 0 0 15px;
+    font-size: 1rem;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+        rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+        rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border: none;
+}
+fieldset{
+border: none;
+margin-top: 20px;
+}
+#horario{
+    width: 25%;
+    border: none;
+    padding: 5px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+#horario option{
+    background-color: steelblue;
+}
+.checkbox{
+    width: 18px;
+    height: 18px;
+}
+.button {
+    margin-top: 20px;
+    padding: 0.7em 1.7em;
+    border-radius: 0.5em;
+    border: 5px solid #e8e8e8;
+    transition:.3s all;
+    box-shadow: 6px 6px 12px #c5c5c5,
+               -6px -6px 12px #ffffff;
+  }
+  .button{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .button:hover {
+    border: 3px solid rgb(99, 204, 239);
+    color:  rgb(99, 204, 239);
+    transform: scale(1);
+  }
+  
+  .button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+               -4px -4px 12px  rgb(99, 204, 239);
+  }
